@@ -11,3 +11,5 @@ The root page at <https://yuehryancho.github.io/>: a one-page hub pointing to th
 ## Search engines
 
 All three sites share one host, so `robots.txt` and `sitemap.xml` live here and cover every page. When a page is added to the lab or course site, add its URL to `sitemap.xml` and update `lastmod`.
+
+The `google-site-verification` meta tag in `index.html` keeps the Google Search Console property for `https://yuehryancho.github.io/` (which covers all three sites) verified. Do not remove it.
