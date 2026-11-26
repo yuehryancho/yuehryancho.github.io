@@ -74,6 +74,12 @@ footer{text-align:center;padding:1.5rem 2rem;font-size:11px;color:var(--mu);bord
 footer .footer-y{font-family:var(--serif);font-size:18px;color:var(--g);font-style:italic;display:inline-block;margin-right:6px;vertical-align:-2px}
 @media(max-width:640px){main{padding:3.5rem 1rem 3rem}h1{font-size:36px}.oops{font-size:20px}}
 @media (prefers-reduced-motion: reduce){*{transition:none!important}}
+
+/* WIDE SCREENS: 1200 px content; the footer line runs the full width of the window */
+html{overflow-x:clip}
+.site{max-width:1200px}
+footer{position:relative;border-top:none}
+footer::before{content:'';position:absolute;top:0;left:50%;width:100vw;transform:translateX(-50%);border-bottom:.5px solid var(--bd);pointer-events:none}
 </style>
 </head>
 <body>
